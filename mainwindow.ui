@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>430</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Soma de RE</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="incon.qrc">
+    <normaloff>:/Apps-Calculator-Metro-icon.png</normaloff>:/Apps-Calculator-Metro-icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="proximo">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>240</y>
+      <width>171</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Proxima Nota fiscal</string>
+    </property>
+    <property name="shortcut">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoSetaEsq">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>270</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoSetaDir">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>270</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>50</y>
+      <width>171</width>
+      <height>177</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>NUMERO</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEdit_4">
+       <property name="inputMask">
+        <string extracomment="teste"/>
+       </property>
+       <property name="maxLength">
+        <number>32767</number>
+       </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="inputMask">
+        <string notr="true"/>
+       </property>
+       <property name="maxLength">
+        <number>32767</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>CNPJ/CPF</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="inputMask">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>DIA EMISSAO</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>VALOR</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="labelCont">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>274</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>nf</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelDat">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>340</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Data </string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>310</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QColumnView" name="columnView">
+    <property name="geometry">
+     <rect>
+      <x>129</x>
+      <y>0</y>
+      <width>371</width>
+      <height>321</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>20</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelContNf">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>20</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>               Nota fiscal </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelInfo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>151</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">scrollArea{qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 rgba(35, 40, 3, 255), stop:0.16 rgba(136, 106, 22, 255), stop:0.225 rgba(166, 140, 41, 255), stop:0.285 rgba(204, 181, 74, 255), stop:0.345 rgba(235, 219, 102, 255), stop:0.415 rgba(245, 236, 112, 255), stop:0.52 rgba(209, 190, 76, 255), stop:0.57 rgba(187, 156, 51, 255), stop:0.635 rgba(168, 142, 42, 255), stop:0.695 rgba(202, 174, 68, 255), stop:0.75 rgba(218, 202, 86, 255), stop:0.815 rgba(208, 187, 73, 255), stop:0.88 rgba(187, 156, 51, 255), stop:0.935 rgba(137, 108, 26, 255), stop:1 rgba(35, 40, 3, 255))}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;CPF/CNPJ&lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Dois ultimos digitos&lt;br/&gt;do cnpj ou cpf do fornecedor.&lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Dia Emissão:&lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Dia de Emissão da Nota.&lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Valor :&lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;valor total da Nota.&lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Numero:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;numero da nota fiscal.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelTiInf">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#0000ff;&quot;&gt;Insira os dados&lt;br/&gt;das nota fiscal&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>130</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>36</y>
+      <width>370</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Coringa">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>70</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Todas as notas &lt;br/&gt;Foram somadas.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Aplicar">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>230</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Aplicar Edição</string>
+    </property>
+   </widget>
+   <zorder>columnView</zorder>
+   <zorder>proximo</zorder>
+   <zorder>botaoSetaEsq</zorder>
+   <zorder>botaoSetaDir</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>line_2</zorder>
+   <zorder>lcdNumber</zorder>
+   <zorder>labelContNf</zorder>
+   <zorder>labelCont</zorder>
+   <zorder>labelDat</zorder>
+   <zorder>labelInfo</zorder>
+   <zorder>labelTiInf</zorder>
+   <zorder>line_4</zorder>
+   <zorder>line</zorder>
+   <zorder>label_Coringa</zorder>
+   <zorder>Aplicar</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuRE">
+    <property name="title">
+     <string>RE</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionCalcular"/>
+    <addaction name="separator"/>
+    <addaction name="actionPular_dia"/>
+    <addaction name="separator"/>
+    <addaction name="actionConferir_Notas"/>
+    <addaction name="separator"/>
+    <addaction name="actionSomatorio_de_Re"/>
+    <addaction name="separator"/>
+    <addaction name="actionAjuda"/>
+   </widget>
+   <addaction name="menuRE"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPular_dia"/>
+   <addaction name="actionCalcular"/>
+   <addaction name="actionConferir_Notas"/>
+   <addaction name="actionSomatorio_de_Re"/>
+   <addaction name="actionAjuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionCalcular">
+   <property name="icon">
+    <iconset resource="incon.qrc">
+     <normaloff>:/Downloads/1215_128x128.png</normaloff>:/Downloads/1215_128x128.png</iconset>
+   </property>
+   <property name="text">
+    <string>Calcular</string>
+   </property>
+  </action>
+  <action name="actionPular_dia">
+   <property name="icon">
+    <iconset resource="incon.qrc">
+     <normaloff>:/Downloads/aplicativos_0837_New.png</normaloff>:/Downloads/aplicativos_0837_New.png</iconset>
+   </property>
+   <property name="text">
+    <string>Novo Re</string>
+   </property>
+  </action>
+  <action name="actionConferir_Notas">
+   <property name="icon">
+    <iconset resource="incon.qrc">
+     <normaloff>:/Downloads/aplicativos_1110_Edit.png</normaloff>:/Downloads/aplicativos_1110_Edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Conferir e editar</string>
+   </property>
+   <property name="toolTip">
+    <string>Conferir e Editar</string>
+   </property>
+  </action>
+  <action name="actionSomatorio_de_Re">
+   <property name="icon">
+    <iconset resource="incon.qrc">
+     <normaloff>:/Downloads/Oxygen-Icons.org-Oxygen-Categories-applications-office.ico</normaloff>:/Downloads/Oxygen-Icons.org-Oxygen-Categories-applications-office.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Continuar</string>
+   </property>
+  </action>
+  <action name="actionAjuda">
+   <property name="icon">
+    <iconset resource="incon.qrc">
+     <normaloff>:/Downloads/Apps-preferences-desktop-notification-icon.png</normaloff>:/Downloads/Apps-preferences-desktop-notification-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ajuda</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>lineEdit_2</tabstop>
+  <tabstop>lineEdit_3</tabstop>
+  <tabstop>lineEdit_4</tabstop>
+ </tabstops>
+ <resources>
+  <include location="incon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

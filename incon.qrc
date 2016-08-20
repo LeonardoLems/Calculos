@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Apps-Calculator-Metro-icon.png</file>
+        <file>../../Downloads/1215_128x128.png</file>
+        <file>../../Downloads/8396_128x128.png</file>
+        <file>../../Downloads/aplicativos_0837_New.png</file>
+        <file>../../Downloads/aplicativos_1100_Documents_blue.png</file>
+        <file>../../Downloads/aplicativos_1110_Edit.png</file>
+        <file>../../Downloads/Oxygen-Icons.org-Oxygen-Categories-applications-office.ico</file>
+        <file>../../Downloads/Apps-preferences-desktop-notification-icon.png</file>
+    </qresource>
+</RCC>
